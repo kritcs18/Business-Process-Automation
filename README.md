@@ -53,8 +53,6 @@ If your function app does not show any functions after running the scripts above
 6. From the terminal, run the following command, `func azure functionapp publish $JS_FUNCTION_APP_NAME --javascript --force --deployment-source-zip $JS_ZIP_FILE_PATH`, where $JS_FUNCTION_APP_NAME is name of BPA function resource and $JS_ZIP_FILE_PATH is a path to zipped archive from 'api' directory
 7. From the terminal, run the following command, `func azure functionapp publish $HF_FUNCTION_APP_NAME --python --build remote --force --deployment-source-zip $HF_ZIP_FILE_PATH`, where $HF_FUNCTION_APP_NAME is name of Hagging Face function resource and $HF_ZIP_FILE_PATH is a path to zipped archive from 'huggingface' directory
 
-### With OpenAI and Redis Enterprise (check pricing) for Vector Search
-(Deprecated.  Replaced by Cognitive Search with Vector Search Features)
 
 ## Document Ingestion Architecture
 Once you've created a high-level Resource Group, you'll fork this repository and importing helper libraries, taking advantage of Github Actions to deploy the set of Azure Cognitive Services and manage all of the new Azure module credentials, in the background, within your newly created pipeline. After pipeline deployment, a static webapp will be created with your newly customizable POC UI for building and triggering pipelines.
